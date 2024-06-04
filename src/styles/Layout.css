@@ -1,0 +1,27 @@
+html,
+body {
+  height: 100%;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.content {
+  padding-top: 70px; /* Adjust the value based on your navbar height */
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  text-align: center;
+}

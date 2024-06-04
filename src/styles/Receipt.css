@@ -1,0 +1,84 @@
+.receipt-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.receipt {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.company-info p {
+  margin: 2px 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.map {
+  margin: 20px 0;
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.print-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.print-button:hover {
+  background-color: #0056b3;
+}
+
+@media print {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .receipt-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .receipt {
+    margin: auto;
+    box-shadow: none;
+    border: none;
+  }
+
+  .print-button {
+    display: none;
+  }
+}
